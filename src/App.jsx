@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <main>
+      <main className="app__main">
         <Hero />
         <Products />
         <Contact />
