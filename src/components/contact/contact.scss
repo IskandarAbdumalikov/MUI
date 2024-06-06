@@ -1,0 +1,45 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  .contact__heading {
+    margin-bottom: 20px;
+  }
+
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contact__input {
+      margin-bottom: 20px;
+      width: 300px;
+    }
+
+    .contact__button {
+      width: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .contact {
+      padding: 10px;
+
+      .contact__heading {
+        font-size: 24px;
+      }
+
+      .contact__form {
+        .contact__input {
+          width: 100%;
+        }
+
+        .contact__button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

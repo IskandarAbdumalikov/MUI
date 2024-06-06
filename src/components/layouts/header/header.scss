@@ -1,0 +1,92 @@
+.header {
+  background: rgb(255, 149, 149) !important;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header__toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 50px;
+}
+
+.header__logo {
+  flex-grow: 1;
+  color: #fff;
+}
+
+.header__links {
+  display: flex;
+  gap: 20px;
+
+  @media (max-width: 910px) {
+    display: none;
+  }
+}
+
+.header__links a,
+.header__buttons button {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header__buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header__menuButton {
+  display: none;
+}
+
+@media (max-width: 910px) {
+  .header__menuButton {
+    display: inline-flex;
+  }
+}
+
+.drawer {
+  width: 250px;
+}
+
+.drawer .MuiListItem-root {
+  justify-content: center;
+}
+
+.drawer .MuiListItemText-root {
+  text-align: center;
+}
+
+.header form {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  gap: 10px;
+}
+
+.header form input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  flex: 1;
+}
+
+.header form button {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header form button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
